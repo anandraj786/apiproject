@@ -1,0 +1,24 @@
+<div>
+    
+    <table class="table table-striped" >
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">User Id</th>
+          <th scope="col">Total number of task</th>
+          <th scope="col">no of completed task</th>
+          <th scope="col">no of not completed task</th>
+        </tr>
+        </thead>
+        <tbody >
+            
+        <tr *ngFor="let item of apidata" >
+          <th scope="row"></th>
+          <td> {{item.userId}}</td>
+          <td> {{item.cmptask}} </td>
+          <td>{{item.ncmptask}}</td>
+          <td >1</td>
+        </tr>
+        </tbody>
+      </table>
+</div>
